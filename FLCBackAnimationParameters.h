@@ -1,0 +1,17 @@
+//
+//  FLCBackingOutParameters.h
+//  FLConos
+//
+//  Created by Jake Bromberg on 7/10/14.
+//  Copyright (c) 2014 Flat Cap. All rights reserved.
+//
+
+#import "FLCAnimationParameters.h"
+
+@interface FLCBackAnimationParameters : FLCAnimationParameters
+
+- (instancetype)initWithEasing:(FLCMediaTimingEasing)easing amplitude:(CGFloat)amplitude __attribute__((objc_designated_initializer));
+
+@property (nonatomic, readonly) CGFloat amplitude;
+
+@end
